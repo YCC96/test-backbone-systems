@@ -53,7 +53,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 const Home: NextPage = (props: any) => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
-  const contacts = useSelector(selectContacts);
+  const contacts: any = useSelector(selectContacts);
   const dispatch = useDispatch();
 
   const getContacts = async (pageContact: string) => {
